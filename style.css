@@ -4,7 +4,6 @@ body {
   padding: 0;
 }
 
-/* Container & Font Styling */
 .cvContainer {
   max-width: 850px;
   margin: 30px auto;
@@ -15,7 +14,6 @@ body {
   background-color: #0c1330;
 }
 
-/* Anchor / Link Kembali */
 .btnBack {
   display: inline-block;
   margin-bottom: 20px;
@@ -29,7 +27,6 @@ body {
   text-decoration: underline;
 }
 
-/* Header & Profil GIF */
 .cvHeader {
   text-align: center;
   margin-bottom: 35px;
@@ -74,7 +71,6 @@ mark {
   border-radius: 3px;
 }
 
-/* Stat Cards (Display Flex) */
 .statGrid {
   display: flex;
   justify-content: space-between;
@@ -89,6 +85,13 @@ mark {
   border-radius: 6px;
   padding: 15px;
   text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.statCard:hover {
+  border-color: #7392ff;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(27, 59, 191, 0.35);
 }
 
 .statCard h2 {
@@ -102,7 +105,6 @@ mark {
   margin: 5px 0 0 0;
 }
 
-/* Section Styling */
 .cvSection {
   margin-bottom: 35px;
 }
@@ -115,7 +117,6 @@ mark {
   margin-bottom: 15px;
 }
 
-/* Timeline List */
 .timelineList {
   list-style-type: none;
   padding-left: 10px;
@@ -144,7 +145,6 @@ mark {
   color: #aed0fe;
 }
 
-/* Skills Wrapper (Display Flex & Inline-Block) */
 .skillsWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -218,3 +218,493 @@ textarea:focus {
   background-color: #7392ff;
   color: #0c1330;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    padding: 40px 30px;
+
+    background-color: #151515;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #2b2b2b;
+
+    z-index: 10;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    border: 3px solid #ffffff;
+}
+
+.profile h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.role {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #999999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+    color: #aaaaaa;
+    text-decoration: none;
+
+    padding: 9px 0;
+
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #555555;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover .social-icon {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  transform: scale(1.08);
+}
+
+
+.cv-button {
+    margin-top: auto;
+
+    display: block;
+
+    padding: 14px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    transform: translateY(-5px);
+    background-color: #dddddd;
+}
+
+
+.main-content {
+    margin-left: 280px;
+
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+
+    padding: 120px 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d0d0d,
+            #1b1b1b
+        );
+}
+
+.welcome {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #999999;
+
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: clamp(50px, 8vw, 110px);
+
+    line-height: 0.95;
+
+    margin-bottom: 35px;
+}
+
+.hero h2 span {
+    display: block;
+
+    color: #666666;
+}
+
+.hero > p:not(.welcome) {
+    max-width: 600px;
+
+    color: #aaaaaa;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.explore-button {
+    width: fit-content;
+
+    padding: 14px 25px;
+
+    border: 1px solid #ffffff;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+
+    transform: translateY(-5px);
+}
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cv-hero-button {
+    width: fit-content;
+    padding: 14px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .cv-hero-button span {
+    margin-left: 8px;
+  }
+
+  .cv-hero-button:hover,
+  .cv-hero-button:focus-visible {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-5px);
+  }
+
+.portfolio {
+    padding: 100px 10%;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #777777;
+
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.portfolio-card {
+    min-height: 260px;
+
+    padding: 30px;
+
+    background-color: #171717;
+
+    border: 1px solid #292929;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+
+    background-color: #202020;
+
+    border-color: #555555;
+}
+
+.card-number {
+    font-size: 14px;
+
+    color: #666666;
+}
+
+.card-content h3 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #999999;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.card-content span {
+    font-size: 12px;
+
+    color: #666666;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 100px 10%;
+
+    background-color: #151515;
+}
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+}
+
+.about-content p {
+    color: #999999;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+footer {
+    padding: 30px 10%;
+
+    border-top: 1px solid #292929;
+
+    color: #666666;
+
+    font-size: 13px;
+}
+
+  @media (max-width: 900px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: auto;
+      padding: 30px 24px;
+      border-right: 0;
+      border-bottom: 1px solid #2b2b2b;
+    }
+
+    .social-media {
+      margin-top: 25px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin-right: 18px;
+    }
+
+    .social-media a:hover {
+      padding-left: 0;
+      transform: translateY(-2px);
+    }
+
+    .cv-button {
+      margin-top: 25px;
+    }
+
+    .main-content {
+      margin-left: 0;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 90px 8%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      padding: 24px 20px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .profile h1 {
+      font-size: 24px;
+    }
+
+    .social-media a {
+      margin-right: 12px;
+      font-size: 14px;
+    }
+
+    .hero,
+    .portfolio,
+    .about {
+      padding: 70px 20px;
+    }
+
+    .hero h2 {
+      font-size: clamp(42px, 15vw, 70px);
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+    }
+
+    .portfolio-grid,
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+
+    .hero-actions {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .explore-button,
+    .cv-hero-button {
+      text-align: center;
+    }
+
+    .cvContainer {
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .cvHeader h1 {
+      font-size: 23px;
+    }
+
+    .cvSection h2 {
+      font-size: 16px;
+    }
+
+    .statGrid {
+      flex-direction: column;
+    }
+
+    fieldset {
+      padding: 14px;
+    }
+  }
