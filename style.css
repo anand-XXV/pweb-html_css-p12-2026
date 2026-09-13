@@ -1,0 +1,220 @@
+body {
+  background-color: #0c1330;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container & Font Styling */
+.cvContainer {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px;
+  font-family: "Arial", sans-serif;
+  color: #aed0fe;
+  line-height: 1.6;
+  background-color: #0c1330;
+}
+
+/* Anchor / Link Kembali */
+.btnBack {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #7392ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btnBack:hover {
+  color: #aed0fe;
+  text-decoration: underline;
+}
+
+/* Header & Profil GIF */
+.cvHeader {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.profileGif {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1b3bbf;
+  margin-bottom: 15px;
+}
+
+.profileGif:hover {
+  border-color: #7392ff;
+}
+
+.cvHeader h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #7392ff;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.deskripsiKarakter {
+  max-width: 700px;
+  margin: 15px auto 0;
+  font-size: 15px;
+  color: #aed0fe;
+}
+
+mark {
+  background-color: #1b3bbf;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Stat Cards (Display Flex) */
+.statGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  flex: 1;
+  background-color: #121c44;
+  border: 1px solid #1b3bbf;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+}
+
+.statCard h2 {
+  margin: 0;
+  color: #7392ff;
+  font-size: 26px;
+}
+
+.statCard p {
+  color: #aed0fe;
+  margin: 5px 0 0 0;
+}
+
+/* Section Styling */
+.cvSection {
+  margin-bottom: 35px;
+}
+
+.cvSection h2 {
+  font-size: 18px;
+  color: #ffffff;
+  border-bottom: 2px solid #1b3bbf;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+/* Timeline List */
+.timelineList {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.timelineList li {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #1b3bbf;
+  margin-bottom: 20px;
+}
+
+.timelineDate {
+  font-size: 12px;
+  font-weight: bold;
+  color: #7392ff;
+}
+
+.timelineList h3 {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.timelineList p {
+  color: #aed0fe;
+}
+
+/* Skills Wrapper (Display Flex & Inline-Block) */
+.skillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillTag {
+  display: inline-block;
+  background-color: #121c44;
+  color: #aed0fe;
+  border: 1px solid #1b3bbf;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.skillTag:hover {
+  background-color: #1b3bbf;
+  color: #ffffff;
+}
+
+/* Form & Fieldset Styling */
+fieldset {
+  border: 1px solid #1b3bbf;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #121c44;
+}
+
+legend {
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+label {
+  color: #aed0fe;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #1b3bbf;
+  background-color: #0c1330;
+  color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #7392ff;
+  outline: none;
+}
+
+.btnSubmit {
+  background-color: #1b3bbf;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btnSubmit:hover {
+  background-color: #7392ff;
+  color: #0c1330;
+}
