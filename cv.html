@@ -9,68 +9,79 @@
 <body>
 
   <div class="cvContainer">
-    <a href="index.html" class="btnBack">Kembali ke Landing Page</a>
+    <a href="index.html" class="btnBack">&larr; Kembali ke Landing Page</a>
 
-    <div class="cvHeader">
+    <header class="cvHeader">
       <img src="resources/primeyb.gif" alt="Foto Profil Reza Arap" class="profileGif">
-      
-      <h1>Reza Oktovian (Reza Arap)</h1>
-      <p class="subtitle">Content Creator, Music Producer, & Entrepreneur</p>
-      
+      <h1>Reza Octovian</h1>
+      <p class="subtitle">Content Creator &bull; Musician &bull; Entrepreneur</p>
       <p class="deskripsiKarakter">
-        Seorang <b>content creator</b> dan musisi pionir di industri kreatif digital Indonesia. Dikenal dengan karakter yang <i>unik, pekerja keras</i>, dan konsisten bertransformasi hingga menjadi produser musik berprestasi internasional.
+        Kreator konten digital dan musisi asal Indonesia yang berfokus pada musik EDM, industri game, dan bisnis hiburan kreatif. Known for bold personality and high energy.
       </p>
-    </div>
+    </header>
 
     <div class="statGrid">
       <div class="statCard">
-        <h2>2B<sup>+</sup></h2>
-        <p><small>Total Views & Stream</small></p>
+        <h2>2.3M+</h2>
+        <p>Subscribers</p>
       </div>
       <div class="statCard">
-        <h2>10<sup>+</sup> Thn</h2>
-        <p><small>Karier Kreatif</small></p>
+        <h2>100M+</h2>
+        <p>Total Views</p>
       </div>
       <div class="statCard">
-        <h2>100%</h2>
-        <p><small>Dedikasi Karya</small></p>
+        <h2>10+</h2>
+        <p>Tahun Berkarya</p>
       </div>
     </div>
 
     <div class="cvSection">
       <h2>01 / Rekam Jejak Pengalaman</h2>
-      <ul class="timelineList">
-        <li>
-          <span class="timelineDate">2016 - Sekarang</span>
-          <h3>Co-Founder & Member | <i>Weird Genius</i></h3>
-          <p>Menciptakan lagu hits internasional <b>"Lathi"</b>, memproduksi musik berbasis EDM dan unsur tradisional, serta tampil di festival musik Tomorrowland.</p>
-        </li>
-        <li>
-          <span class="timelineDate">2018 - Sekarang</span>
-          <h3>Founder & Owner | <i>YB Rapless</i></h3>
-          <p>Mengelola berbagai lini bisnis kreatif, merchandise, restoran, hingga bisnis arena esports.</p>
-        </li>
-        <li>
-          <span class="timelineDate">2012 - 2018</span>
-          <h3>Pelopor Gaming Content Creator | <i>YouTube Indonesia</i></h3>
-          <p>Membangun komunitas <s>RAPSTRONAUT</s> dan mendonasikan kanal YouTube pertama dengan jutaan subscribers ke yayasan kanker anak.</p>
-        </li>
-      </ul>
+      
+      <div class="experienceContainer">
+        
+        <div class="experienceCard expCard1">
+          <div class="experienceContent">
+            <span class="timelineDate">2016 - Sekarang</span>
+            <h3>Co-Founder & Member | <i>Weird Genius</i></h3>
+            <p>Menciptakan lagu hits internasional <b>"Lathi"</b>, memproduksi musik berbasis EDM dan unsur tradisional, serta tampil di festival musik Tomorrowland.</p>
+          </div>
+        </div>
+
+        <div class="experienceCard expCard2">
+          <div class="experienceContent">
+            <span class="timelineDate">2018 - Sekarang</span>
+            <h3>Founder & Owner | <i>YB Rapless</i></h3>
+            <p>Mengelola berbagai lini bisnis kreatif, merchandise, restoran, hingga bisnis arena esports.</p>
+          </div>
+        </div>
+
+        <div class="experienceCard expCard3">
+          <div class="experienceContent">
+            <span class="timelineDate">2012 - 2018</span>
+            <h3>Pelopor Gaming Content Creator | <i>YouTube Indonesia</i></h3>
+            <p>Membangun komunitas <s>RAPSTRONAUT</s> dan mendonasikan kanal YouTube pertama dengan jutaan subscribers ke yayasan kanker anak.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="cvSection">
       <h2>02 / Riwayat Pendidikan</h2>
-      <ul class="timelineList">
-        <li>
+      
+      <div class="timelineList">
+        <div class="timelineItem">
           <span class="timelineDate">Pendidikan Menengah</span>
           <h3>SMA YPK Wijaya Jakarta</h3>
           <p>Menyelesaikan pendidikan menengah atas sebelum berfokus penuh di industri hiburan digital dan seni musik.</p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <div class="cvSection">
       <h2>03 / Keahlian & Keterampilan</h2>
+      
       <div class="skillsWrapper">
         <span class="skillTag">Music Production</span>
         <span class="skillTag">Digital Content Strategy</span>
@@ -81,31 +92,39 @@
     </div>
 
     <div class="cvSection">
-      <h2>Kanal Aspirasi & Collaboration</h2>
+      <h2>04 / Hubungi Saya</h2>
       
-      <form action="#" method="POST">
-        <fieldset>
-          <legend><b>Kirim Pesan ke Reza Arap</b></legend>
+      <fieldset>
+        <legend>Kirim Pesan / Kerja Sama</legend>
+        <form action="#" method="post">
+          <div class="formGroup">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+          </div>
+          
+          <div class="formGroup">
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
 
-          <label for="name">Nama Lengkap:</label><br>
-          <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><br><br>
+          <div class="formGroup">
+            <label for="subjek">Subjek Kerja Sama:</label>
+            <select id="subjek" name="subjek">
+              <option value="sponsorship">Sponsorship / Endorsement</option>
+              <option value="music">Music Collaboration</option>
+              <option value="event">Event Booking</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
 
-          <label for="email">Email Anda:</label><br>
-          <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required><br><br>
+          <div class="formGroup">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan detail tawaran atau pesan Anda..."></textarea>
+          </div>
 
-          <label for="category">Kategori Pesan:</label><br>
-          <select id="category" name="category">
-            <option value="bisnis">Ajakan Bisnis / Endorsement</option>
-            <option value="kolaborasi">Kolaborasi Musik / Konten</option>
-            <option value="sapaan">Sapaan Fans</option>
-          </select><br><br>
-
-          <label for="message">Pesan / Aspirasi:</label><br>
-          <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea><br><br>
-
-          <button type="submit" class="btnSubmit">Kirim Pesan &rarr;</button>
-        </fieldset>
-      </form>
+          <button type="submit" class="btnSubmit">Kirim Pesan</button>
+        </form>
+      </fieldset>
     </div>
 
   </div>
