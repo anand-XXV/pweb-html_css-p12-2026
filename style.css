@@ -190,7 +190,8 @@ mark {
   padding-left: 10px;
 }
 
-.timelineList li {
+.timelineList li,
+.timelineItem {
   position: relative;
   padding-left: 20px;
   border-left: 2px solid #1b3bbf;
@@ -203,13 +204,15 @@ mark {
   color: #7392ff;
 }
 
-.timelineList h3 {
+.timelineList h3,
+.timelineItem h3 {
   margin: 4px 0;
   font-size: 16px;
   color: #ffffff;
 }
 
-.timelineList p {
+.timelineList p,
+.timelineItem p {
   color: #aed0fe;
 }
 

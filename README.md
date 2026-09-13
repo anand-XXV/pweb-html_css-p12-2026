@@ -6,5 +6,3 @@
 | I Made Gyanendra Anand Wisnawa | 5027251072 |
 | Ronnin Raditya Putra Purbono | 5027251119|
 | Mahrinza Redouane Zakariyah | 5027251074 |
-
-## PLACEHOLDER
